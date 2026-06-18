@@ -7,6 +7,8 @@ Go must be installed
 
 ## Running
 
-From the terminal:
-
 ```$ go run .```
+
+## Testing
+
+```$ go test ./... -v```
