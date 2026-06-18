@@ -2,11 +2,20 @@ package main
 
 import (
 	"fmt"
+	"log"
 
 	"example/hello-go-tutorial/greetings"
 )
 
 func main() {
-	message := greetings.Hello("Gladys")
+	log.SetPrefix("greetings: ") // Sets prefix to log (overwriting default of date and time)
+	log.SetFlags(0)              // Disables default log dates
+
+	message, err := greetings.Hello("")
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	fmt.Println(message)
 }
