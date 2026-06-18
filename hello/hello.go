@@ -11,11 +11,13 @@ func main() {
 	log.SetPrefix("greetings: ") // Sets prefix to log (overwriting default of date and time)
 	log.SetFlags(0)              // Disables default log dates
 
-	message, err := greetings.Hello("Gladys")
+	names := []string{"Gladys", "Samantha", "Darrin"}
+
+	messages, err := greetings.Hellos(names)
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println(message)
+	fmt.Println(messages)
 }
