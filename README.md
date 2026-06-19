@@ -17,7 +17,7 @@ Go must be installed
 
 ```$ go test ./... -v```
 
-## Build
+## Deploy
 
 ### 1) Build
  
