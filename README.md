@@ -62,7 +62,7 @@ Go must be installed
 
 ---
 
-### 6) Add to PATH permanently
+### 6) Add to PATH permanently (Optional)
 
 Export will only temporarily add the program to your PATH for one terminal window session, to make the change persist to need to update Zsh or Bash
 
